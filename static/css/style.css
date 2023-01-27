@@ -1,0 +1,149 @@
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #161e40;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+}
+
+.page {
+  display: flex;
+  width: 100%;
+  max-width: 640px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 30px;
+}
+
+.hero {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.hero-image img {
+  display: block;
+  width: 128px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.hero h1 {
+  font-size: 26px;
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.social-links svg {
+  width: 20px;
+  height: 20px;
+}
+
+.social-links .linkedin svg {
+  color: #0077b5;
+}
+
+.social-links .github svg {
+  color: #333;
+}
+
+.social-links .twitter svg {
+  color: #1da1f2;
+}
+
+.contact {
+  margin: 40px 0 60px;
+}
+
+.contact form label {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.contact form input,
+.contact form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact form button {
+  display: block;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: auto;
+  padding-bottom: 40px;
+  color: #999;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-bottom: 40px;
+  }
+
+  .hero {
+    gap: 30px;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+}
+
