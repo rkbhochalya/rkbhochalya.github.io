@@ -47,6 +47,21 @@
     <meta property="og:url" content="https://rajendrakumar.com" />
     <meta property="og:site_name" content="Rajendra Bhochalya" />
     <meta property="og:type" content="website" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EDWY42XQHP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-EDWY42XQHP");
+    </script>
   </head>
   <body>
     <div class="page">
@@ -190,20 +205,28 @@
             </label>
             <label>
               <span>Subject:</span>
-              <input name="subject" required placeholder="Something short, sweet & catchy ;)" />
+              <input
+                name="subject"
+                required
+                placeholder="Something short, sweet & catchy ;)"
+              />
             </label>
             <label>
               <span>Message:</span>
-              <textarea name="message" required minlength="120" rows="8" placeholder="The floor is all yours ✨"></textarea>
+              <textarea
+                name="message"
+                required
+                minlength="120"
+                rows="8"
+                placeholder="The floor is all yours ✨"
+              ></textarea>
             </label>
             <button type="submit">Send</button>
           </form>
         </div>
       </main>
       <footer class="footer">
-        <div class="copyright">
-          © Rajendra Bhochalya
-        </div>
+        <div class="copyright">© Rajendra Bhochalya</div>
       </footer>
     </div>
   </body>
