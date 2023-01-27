@@ -116,6 +116,12 @@ a {
   border-radius: 5px;
 }
 
+.contact form input:focus,
+.contact form textarea:focus {
+  outline: 2px solid #333;
+  border-color: transparent;
+}
+
 .contact form button {
   display: block;
   padding: 10px 30px;
@@ -147,3 +153,30 @@ a {
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #fff;
+    background: #161e40;
+  }
+
+  .social-links .github svg {
+    color: #fff;
+  }
+
+  .contact form input,
+  .contact form textarea {
+    border: 1px solid #ccc;
+    background: inherit;
+  }
+
+  .contact form input:focus,
+  .contact form textarea:focus {
+    outline: 2px solid #fff;
+    border-color: transparent;
+  }
+
+  .contact form button {
+    background-color: #fff;
+    color: #161e40;
+  }
+}
