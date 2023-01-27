@@ -165,13 +165,13 @@ a {
 
   .contact form input,
   .contact form textarea {
-    border: 1px solid #ccc;
+    border: 1px solid #999;
     background: inherit;
   }
 
   .contact form input:focus,
   .contact form textarea:focus {
-    outline: 2px solid #fff;
+    outline: 2px solid #ccc;
     border-color: transparent;
   }
 
